@@ -21,10 +21,12 @@ class Student(Person):
         else:
             return 0
 class Teacher(Person):
+    base_salary = 500
+
     def __init__(self, full_name, age, is_married, experience, base_salary):
         super().__init__(full_name, age, is_married)
         self.experience = experience
-        self.base_salary = base_salary
+
 
     def total_salary(self):
         if self.experience > 3:
