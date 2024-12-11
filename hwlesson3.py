@@ -20,22 +20,22 @@ class Computer:
         self.__memory = value
 
     def __eq__(self, other):
-        return self.__cpu == other.cpu and self.__memory == other.memory
+        return self.__memory == other.memory
 
     def __ne__(self, other):
-        return self.__cpu != other.cpu or self.__memory != other.memory
+        return self.__memory != other.memory
 
     def __lt__(self, other):
-        return self.__cpu < other.cpu and self.__memory < other.memory
+        return self.__memory < other.memory
 
     def __gt__(self, other):
-        return self.__cpu > other.cpu and self.__memory > other.memory
+        return self.__memory > other.memory
 
     def __le__(self, other):
-        return self.__cpu <= other.cpu and self.__memory <= other.memory
+        return self.__memory <= other.memory
 
     def __ge__(self, other):
-        return self.__cpu >= other.cpu and self.__memory >= other.memory
+        return self.__memory >= other.memory
 
 
     def make_computations(self):
